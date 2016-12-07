@@ -10,6 +10,8 @@
 
 @interface HYLNavigationBar : UIViewController
 
-- (instancetype)initWithFrame:(CGRect)frame;
+//- (instancetype)initWithFrame:(CGRect)frame;
+
+- (void) createNavigationBarWithSearch:(CGRect)frame;
 
 @end

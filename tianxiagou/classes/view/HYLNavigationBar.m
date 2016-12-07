@@ -11,19 +11,19 @@
 
 @implementation HYLNavigationBar
 
-- (instancetype)initWithFrame:(CGRect)frame{
+- (instancetype)init{
     self = [super init];
     if (self) {
-        [self createNavigationBarWithSearch:frame];
+        [self createNavigationBarWithSearch];
     }
     return self;
 }
 
-- (void) createNavigationBarWithSearch:(CGRect)frame{
+- (void) createNavigationBarWithSearch{
     UIView *navigationBar = [[UIView alloc]init];
     navigationBar.alpha = 0.5;
     navigationBar.backgroundColor = [UIColor whiteColor];
-    navigationBar.frame = CGRectMake(0, 0, self.view.frame.size.width, frame.size.height);
+    navigationBar.frame = CGRectMake(0, 0, self.view.frame.size.width, 64);
     [self.view addSubview:navigationBar];
     
     UIButton *btnLeft = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -32,22 +32,23 @@
     [navigationBar addSubview:btnLeft];
 //    btnLeft.layer.borderWidth = 1;
     UITextField *TFSearch = [[UITextField alloc]init];
-    TFSearch.center = CGPointMake(frame.size.width/2, 8+frame.size.height/2);
+    TFSearch.center = CGPointMake(self.view.frame.size.width/2, 8+64/2);
     TFSearch.borderStyle = UITextBorderStyleRoundedRect;
     TFSearch.leftView = [self createLeftView];
     TFSearch.leftViewMode = UITextFieldViewModeAlways;
     TFSearch.rightView = [self createRightView];
     TFSearch.rightViewMode = UITextFieldViewModeAlways;
-    TFSearch.bounds = CGRectMake(0, 0, frame.size.width*2/3, 35);
+    TFSearch.bounds = CGRectMake(0, 0, self.view.frame.size.width*2/3, 35);
     TFSearch.layer.masksToBounds = YES;
     TFSearch.layer.cornerRadius = 16;
     TFSearch.backgroundColor = [UIColor colorWithHexString:@"#e6e6e6"];
     TFSearch.placeholder = @"搜索商家、商品";
     TFSearch.textColor = [UIColor blackColor];
+//    TFSearch.keyboardType = UIKeyboardTypeASCIICapableNumberPad;
     [navigationBar addSubview:TFSearch];
     
     UIButton *btnRight = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnRight.frame = CGRectMake(frame.size.width-40, 25, 25, 25);
+    btnRight.frame = CGRectMake(self.view.frame.size.width-40, 25, 25, 25);
     [btnRight setBackgroundImage:[UIImage imageNamed:@"message"] forState:UIControlStateNormal];
     [navigationBar addSubview:btnRight];
 }
