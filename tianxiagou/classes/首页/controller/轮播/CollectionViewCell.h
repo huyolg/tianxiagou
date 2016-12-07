@@ -10,6 +10,8 @@
 
 @interface CollectionViewCell : UICollectionViewCell
 
+//@property(nonatomic,strong) NSURL *url;
+
 - (void)configWithImage:(id)image ;
 
 @end

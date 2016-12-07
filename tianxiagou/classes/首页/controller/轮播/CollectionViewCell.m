@@ -29,6 +29,14 @@
     return self;
 }
 
+//- (void)setUrl:(NSURL *)url
+//{
+//    _url = url;
+//    NSData *data = [NSData dataWithContentsOfURL:url];
+//    UIImage *image = [UIImage imageWithData:data];
+//    self.imgView.image = image;
+//}
+
 - (void)configWithImage:(id)image {
 //    self.imgView.layer.contents = (__bridge id _Nullable)([UIImage imageNamed:image].CGImage);
     NSLog(@"image %@",image);

@@ -8,7 +8,9 @@
 
 #import "HYLHomeViewController.h"
 #import "HYLNavigationBar.h"
-#import "HYLCollectionViewController.h"
+//#import "HYLCollectionViewController.h"
+#import "HYLCollectionView.h"
+#import "HYLHomeList.h"
 
 @interface HYLHomeViewController ()
 
@@ -19,29 +21,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = YES;
-    HYLNavigationBar *navigationBar = [[HYLNavigationBar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
+    HYLNavigationBar *navigationBar = [[HYLNavigationBar alloc]init];
+    navigationBar.view.frame = CGRectMake(0, 0, self.view.frame.size.width, 64);
     [self.view addSubview:navigationBar.view];
-    navigationBar.view.layer.borderWidth = 1;
-    navigationBar.view.layer.borderColor = [UIColor redColor].CGColor;
     
-    HYLCollectionViewController *collectionView = [[HYLCollectionViewController alloc]init];
-    collectionView.view.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.frame.size.height/3);
-    NSMutableArray *images = [NSMutableArray array];
-    for (int i = 0; i < 5; i++) {
-        NSString *fileName = [NSString stringWithFormat:@"%d.jpg",i];
-        [images addObject:fileName];
-    }
-    collectionView.images = images;
-//    NSLog(@"%@",images[1]);
-    NSLog(@"")
-    [self.view addSubview:collectionView.view];
-    
-//    [self.view bringSubviewToFront:navigationBar.view];
-    
+    HYLHomeList *homeList = [[HYLHomeList alloc]init];
+    homeList.frame = CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64-64);
+    [self.view addSubview:homeList];
+    homeList.tableHeaderView = [self creatHeardView];
     
 }
 
-
+- (UIView*)creatHeardView
+{
+    UIImageView *imageView = [[UIImageView alloc]init];
+    imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width/2);
+    imageView.image = [UIImage imageNamed:@"1.jpg"];
+    return imageView;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

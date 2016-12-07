@@ -32,28 +32,41 @@
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.alwaysBounceVertical = NO;
         _collectionView.dataSource = self;
+//        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:self.images.count inSection:0];
+//        [_collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:NO];
+        
     }
     return _collectionView;
 }
 
-- (NSArray *)images
+- (NSMutableArray *)images
 {
     if (!_images) {
-        _images = [NSArray array];
+        _images = [NSMutableArray array];
     }
     return _images;
+}
+
+- (instancetype)initWithImages:(NSMutableArray*)images
+{
+    if (self = [super init]) {
+        self.images = images;
+        
+    }
+    return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self.view addSubview:self.collectionView];
-    
+    NSLog(@"images = %@",self.images);
     
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
+    NSLog(@"self.images.count %ld",self.images.count);
     return self.images.count;
 }
 
@@ -63,8 +76,8 @@
 
 - (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:IdentifierCell forIndexPath:indexPath];
-    [cell configWithImage:self.images[indexPath.item]];
-    
+    [cell configWithImage:[NSString stringWithFormat:@"%ld.jpg",(long)indexPath.item + 1]];
+    NSLog(@"000000==%@",[NSString stringWithFormat:@"%ld.jpg",(long)indexPath.item + 1]);
     return cell;
 }
 

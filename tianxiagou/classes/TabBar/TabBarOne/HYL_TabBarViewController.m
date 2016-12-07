@@ -9,7 +9,7 @@
 #import "HYL_TabBarViewController.h"
 #import "HNavigationController.h"
 #import "HYL_TabBar.h"
-//#import "HYL_MainViewController.h"
+#import "HYLTypeViewController.h"
 #import "HYLHomeViewController.h"
 //#import "HYL_MediuViewController.h"
 //#import "MineViewController.h"
@@ -63,7 +63,7 @@
     HYLHomeViewController *mainView = [[HYLHomeViewController alloc]init];
     [self setupChildViewController:mainView title:@"首页" imageName:@"tabBar_home" selectedImageName:@"tabBar_homeSec"];
     
-    UIViewController *mediuVC = [[UIViewController alloc]init];
+    HYLTypeViewController *mediuVC = [[HYLTypeViewController alloc]init];
     [self setupChildViewController:mediuVC title:@"分类" imageName:@"tabBar_type" selectedImageName:@"tabBar_typeSec"];
     
     UIViewController *cartVC = [[UIViewController alloc]init];

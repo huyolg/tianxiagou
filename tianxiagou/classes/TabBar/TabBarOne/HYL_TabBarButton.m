@@ -21,6 +21,8 @@ const double HYLTabBarImageRatio = 0.65;
 {
     self=[super initWithFrame:frame];
     if (self) {
+//        self.layer.borderWidth = 1;
+//        self.titleLabel.layer.borderWidth = 1;
         //1.图片居中
         self.imageView.contentMode=UIViewContentModeCenter;
         //2.文字居中

@@ -26,7 +26,13 @@
 		05D45F8B1DEC364C00979E23 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05D45F831DEC364C00979E23 /* 4.jpg */; };
 		05D45F8C1DEC364C00979E23 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05D45F841DEC364C00979E23 /* 5.jpg */; };
 		05D45F8D1DEC364C00979E23 /* ScaleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F861DEC364C00979E23 /* ScaleFlowLayout.m */; };
-		05D45F901DEC368500979E23 /* HYLCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F8F1DEC368500979E23 /* HYLCollectionViewController.m */; };
+		05D45F941DEE761D00979E23 /* HYLCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F931DEE761D00979E23 /* HYLCollectionView.m */; };
+		05D45F981DEE7D8200979E23 /* HYLHomeList.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F971DEE7D8200979E23 /* HYLHomeList.m */; };
+		05D45F9C1DEE9D6F00979E23 /* bannerScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F9B1DEE9D6F00979E23 /* bannerScroll.m */; };
+		05D45F9F1DEEA1A700979E23 /* HYLHomeListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F9E1DEEA1A700979E23 /* HYLHomeListCell.m */; };
+		05D45FA41DEEB33800979E23 /* HYLTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45FA31DEEB33800979E23 /* HYLTypeViewController.m */; };
+		05D45FB41DF003AF00979E23 /* HYLChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45FB31DF003AF00979E23 /* HYLChildViewController.m */; };
+		05D45FB71DF0073F00979E23 /* HYLSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45FB61DF0073F00979E23 /* HYLSliderViewController.m */; };
 		05EF3B881DCAE10700A5EC57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EF3B871DCAE10700A5EC57 /* main.m */; };
 		05EF3B8B1DCAE10700A5EC57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EF3B8A1DCAE10700A5EC57 /* AppDelegate.m */; };
 		05EF3B8E1DCAE10700A5EC57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EF3B8D1DCAE10700A5EC57 /* ViewController.m */; };
@@ -55,6 +61,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050D8C1D1DF6964A00F9D1BA /* HYLTypeShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLTypeShowViewController.h; sourceTree = "<group>"; };
+		050D8C1E1DF6964A00F9D1BA /* HYLTypeShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLTypeShowViewController.m; sourceTree = "<group>"; };
+		050D8C261DF6AD6600F9D1BA /* HYLTypeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLTypeCollectionViewCell.h; sourceTree = "<group>"; };
+		050D8C271DF6AD6600F9D1BA /* HYLTypeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLTypeCollectionViewCell.m; sourceTree = "<group>"; };
+		050D8C281DF6AD6600F9D1BA /* typeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = typeModel.h; sourceTree = "<group>"; };
+		050D8C291DF6AD6600F9D1BA /* typeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = typeModel.m; sourceTree = "<group>"; };
+		050D8C2D1DF6BB5900F9D1BA /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
+		050D8C2E1DF6BB5900F9D1BA /* img10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img10.jpg; sourceTree = "<group>"; };
+		050D8C2F1DF6BB5900F9D1BA /* img11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img11.jpg; sourceTree = "<group>"; };
+		050D8C301DF6BB5900F9D1BA /* img12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img12.jpg; sourceTree = "<group>"; };
+		050D8C311DF6BB5900F9D1BA /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
+		050D8C321DF6BB5900F9D1BA /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
+		050D8C331DF6BB5900F9D1BA /* img4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img4.jpg; sourceTree = "<group>"; };
+		050D8C341DF6BB5900F9D1BA /* img5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img5.jpg; sourceTree = "<group>"; };
+		050D8C351DF6BB5900F9D1BA /* img6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img6.jpg; sourceTree = "<group>"; };
+		050D8C361DF6BB5900F9D1BA /* img7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img7.jpg; sourceTree = "<group>"; };
+		050D8C371DF6BB5900F9D1BA /* img8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img8.jpg; sourceTree = "<group>"; };
+		050D8C381DF6BB5900F9D1BA /* img9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img9.jpg; sourceTree = "<group>"; };
 		05D45F4F1DEBCD4A00979E23 /* HYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLTabBar.h; sourceTree = "<group>"; };
 		05D45F501DEBCD4A00979E23 /* HYLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLTabBar.m; sourceTree = "<group>"; };
 		05D45F511DEBCD4A00979E23 /* HYLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLTabBarController.h; sourceTree = "<group>"; };
@@ -88,8 +112,20 @@
 		05D45F841DEC364C00979E23 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		05D45F851DEC364C00979E23 /* ScaleFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleFlowLayout.h; sourceTree = "<group>"; };
 		05D45F861DEC364C00979E23 /* ScaleFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScaleFlowLayout.m; sourceTree = "<group>"; };
-		05D45F8E1DEC368500979E23 /* HYLCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLCollectionViewController.h; sourceTree = "<group>"; };
-		05D45F8F1DEC368500979E23 /* HYLCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLCollectionViewController.m; sourceTree = "<group>"; };
+		05D45F921DEE761D00979E23 /* HYLCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLCollectionView.h; sourceTree = "<group>"; };
+		05D45F931DEE761D00979E23 /* HYLCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLCollectionView.m; sourceTree = "<group>"; };
+		05D45F961DEE7D8200979E23 /* HYLHomeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLHomeList.h; sourceTree = "<group>"; };
+		05D45F971DEE7D8200979E23 /* HYLHomeList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLHomeList.m; sourceTree = "<group>"; };
+		05D45F9A1DEE9D6F00979E23 /* bannerScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bannerScroll.h; sourceTree = "<group>"; };
+		05D45F9B1DEE9D6F00979E23 /* bannerScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bannerScroll.m; sourceTree = "<group>"; };
+		05D45F9D1DEEA1A700979E23 /* HYLHomeListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLHomeListCell.h; sourceTree = "<group>"; };
+		05D45F9E1DEEA1A700979E23 /* HYLHomeListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLHomeListCell.m; sourceTree = "<group>"; };
+		05D45FA21DEEB33800979E23 /* HYLTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLTypeViewController.h; sourceTree = "<group>"; };
+		05D45FA31DEEB33800979E23 /* HYLTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLTypeViewController.m; sourceTree = "<group>"; };
+		05D45FB21DF003AF00979E23 /* HYLChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLChildViewController.h; sourceTree = "<group>"; };
+		05D45FB31DF003AF00979E23 /* HYLChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLChildViewController.m; sourceTree = "<group>"; };
+		05D45FB51DF0073F00979E23 /* HYLSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLSliderViewController.h; sourceTree = "<group>"; };
+		05D45FB61DF0073F00979E23 /* HYLSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLSliderViewController.m; sourceTree = "<group>"; };
 		05EF3B831DCAE10700A5EC57 /* tianxiagou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tianxiagou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EF3B871DCAE10700A5EC57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05EF3B891DCAE10700A5EC57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +169,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050D8C1C1DF6936400F9D1BA /* childCtronllers */ = {
+			isa = PBXGroup;
+			children = (
+				050D8C2C1DF6BB5900F9D1BA /* images */,
+				050D8C261DF6AD6600F9D1BA /* HYLTypeCollectionViewCell.h */,
+				050D8C271DF6AD6600F9D1BA /* HYLTypeCollectionViewCell.m */,
+				050D8C281DF6AD6600F9D1BA /* typeModel.h */,
+				050D8C291DF6AD6600F9D1BA /* typeModel.m */,
+				050D8C1D1DF6964A00F9D1BA /* HYLTypeShowViewController.h */,
+				050D8C1E1DF6964A00F9D1BA /* HYLTypeShowViewController.m */,
+			);
+			path = childCtronllers;
+			sourceTree = "<group>";
+		};
+		050D8C2C1DF6BB5900F9D1BA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				050D8C2D1DF6BB5900F9D1BA /* img1.jpg */,
+				050D8C2E1DF6BB5900F9D1BA /* img10.jpg */,
+				050D8C2F1DF6BB5900F9D1BA /* img11.jpg */,
+				050D8C301DF6BB5900F9D1BA /* img12.jpg */,
+				050D8C311DF6BB5900F9D1BA /* img2.jpg */,
+				050D8C321DF6BB5900F9D1BA /* img3.jpg */,
+				050D8C331DF6BB5900F9D1BA /* img4.jpg */,
+				050D8C341DF6BB5900F9D1BA /* img5.jpg */,
+				050D8C351DF6BB5900F9D1BA /* img6.jpg */,
+				050D8C361DF6BB5900F9D1BA /* img7.jpg */,
+				050D8C371DF6BB5900F9D1BA /* img8.jpg */,
+				050D8C381DF6BB5900F9D1BA /* img9.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		05D45F4D1DEBCD4A00979E23 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +270,7 @@
 		05D45F6E1DEC032B00979E23 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				05D45F951DEE7D3B00979E23 /* 首页内容 */,
 				05D45F7C1DEC364C00979E23 /* 轮播 */,
 				05D45F751DEC03EC00979E23 /* HYLHomeViewController.h */,
 				05D45F761DEC03EC00979E23 /* HYLHomeViewController.m */,
@@ -248,8 +318,8 @@
 				05D45F7F1DEC364C00979E23 /* images */,
 				05D45F851DEC364C00979E23 /* ScaleFlowLayout.h */,
 				05D45F861DEC364C00979E23 /* ScaleFlowLayout.m */,
-				05D45F8E1DEC368500979E23 /* HYLCollectionViewController.h */,
-				05D45F8F1DEC368500979E23 /* HYLCollectionViewController.m */,
+				05D45F921DEE761D00979E23 /* HYLCollectionView.h */,
+				05D45F931DEE761D00979E23 /* HYLCollectionView.m */,
 			);
 			path = "轮播";
 			sourceTree = "<group>";
@@ -264,6 +334,49 @@
 				05D45F841DEC364C00979E23 /* 5.jpg */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		05D45F951DEE7D3B00979E23 /* 首页内容 */ = {
+			isa = PBXGroup;
+			children = (
+				05D45F991DEE9C9300979E23 /* 轮播 */,
+				05D45F961DEE7D8200979E23 /* HYLHomeList.h */,
+				05D45F971DEE7D8200979E23 /* HYLHomeList.m */,
+				05D45F9D1DEEA1A700979E23 /* HYLHomeListCell.h */,
+				05D45F9E1DEEA1A700979E23 /* HYLHomeListCell.m */,
+			);
+			path = "首页内容";
+			sourceTree = "<group>";
+		};
+		05D45F991DEE9C9300979E23 /* 轮播 */ = {
+			isa = PBXGroup;
+			children = (
+				05D45F9A1DEE9D6F00979E23 /* bannerScroll.h */,
+				05D45F9B1DEE9D6F00979E23 /* bannerScroll.m */,
+			);
+			path = "轮播";
+			sourceTree = "<group>";
+		};
+		05D45FA01DEEB31600979E23 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				05D45FA11DEEB31600979E23 /* controller */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
+		05D45FA11DEEB31600979E23 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				050D8C1C1DF6936400F9D1BA /* childCtronllers */,
+				05D45FA21DEEB33800979E23 /* HYLTypeViewController.h */,
+				05D45FA31DEEB33800979E23 /* HYLTypeViewController.m */,
+				05D45FB21DF003AF00979E23 /* HYLChildViewController.h */,
+				05D45FB31DF003AF00979E23 /* HYLChildViewController.m */,
+				05D45FB51DF0073F00979E23 /* HYLSliderViewController.h */,
+				05D45FB61DF0073F00979E23 /* HYLSliderViewController.m */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		05EF3B7A1DCAE10700A5EC57 = {
@@ -332,6 +445,7 @@
 		05EF3BB91DCAE80600A5EC57 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				05D45FA01DEEB31600979E23 /* 分类 */,
 				05D45F781DEC062600979E23 /* view */,
 				05D45F711DEC036500979E23 /* BaseViewController */,
 				05D45F6D1DEC032B00979E23 /* 首页 */,
@@ -483,13 +597,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				050D8C3A1DF6BB5900F9D1BA /* img10.jpg in Resources */,
+				050D8C441DF6BB5900F9D1BA /* img9.jpg in Resources */,
+				050D8C3F1DF6BB5900F9D1BA /* img4.jpg in Resources */,
 				05EF3B961DCAE10700A5EC57 /* LaunchScreen.storyboard in Resources */,
+				050D8C3B1DF6BB5900F9D1BA /* img11.jpg in Resources */,
+				050D8C3E1DF6BB5900F9D1BA /* img3.jpg in Resources */,
 				05D45F8C1DEC364C00979E23 /* 5.jpg in Resources */,
 				05D45F8B1DEC364C00979E23 /* 4.jpg in Resources */,
+				050D8C431DF6BB5900F9D1BA /* img8.jpg in Resources */,
 				05D45F881DEC364C00979E23 /* 1.jpg in Resources */,
+				050D8C391DF6BB5900F9D1BA /* img1.jpg in Resources */,
+				050D8C401DF6BB5900F9D1BA /* img5.jpg in Resources */,
 				05D45F891DEC364C00979E23 /* 2.jpg in Resources */,
+				050D8C3D1DF6BB5900F9D1BA /* img2.jpg in Resources */,
+				050D8C3C1DF6BB5900F9D1BA /* img12.jpg in Resources */,
+				050D8C421DF6BB5900F9D1BA /* img7.jpg in Resources */,
 				05D45F8A1DEC364C00979E23 /* 3.jpg in Resources */,
 				05EF3B931DCAE10700A5EC57 /* Assets.xcassets in Resources */,
+				050D8C411DF6BB5900F9D1BA /* img6.jpg in Resources */,
 				05EF3B911DCAE10700A5EC57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,23 +641,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05D45F901DEC368500979E23 /* HYLCollectionViewController.m in Sources */,
+				050D8C2A1DF6AD6600F9D1BA /* HYLTypeCollectionViewCell.m in Sources */,
+				05D45F981DEE7D8200979E23 /* HYLHomeList.m in Sources */,
 				05D45F5C1DEBCE1200979E23 /* UIBarButtonItem+Extend.m in Sources */,
 				05D45F771DEC03EC00979E23 /* HYLHomeViewController.m in Sources */,
+				05D45FB71DF0073F00979E23 /* HYLSliderViewController.m in Sources */,
 				05EF3B8E1DCAE10700A5EC57 /* ViewController.m in Sources */,
 				05D45F7B1DEC080300979E23 /* HYLNavigationBar.m in Sources */,
 				05D45F6B1DEBDB9900979E23 /* HYL_TabBarButton.m in Sources */,
+				05D45FA41DEEB33800979E23 /* HYLTypeViewController.m in Sources */,
 				05D45F541DEBCD4A00979E23 /* HYLTabBarController.m in Sources */,
 				05D45F871DEC364C00979E23 /* CollectionViewCell.m in Sources */,
 				05D45F6C1DEBDB9900979E23 /* HYL_TabBarViewController.m in Sources */,
 				05EF3B8B1DCAE10700A5EC57 /* AppDelegate.m in Sources */,
+				050D8C2B1DF6AD6600F9D1BA /* typeModel.m in Sources */,
+				05D45FB41DF003AF00979E23 /* HYLChildViewController.m in Sources */,
 				05D45F5D1DEBCE1200979E23 /* UIColor+Hex.m in Sources */,
 				05D45F741DEC03BB00979E23 /* HYLBaseViewController.m in Sources */,
 				05EF3B881DCAE10700A5EC57 /* main.m in Sources */,
 				05D45F5E1DEBCE1200979E23 /* UIView+Extend.m in Sources */,
 				05D45F6A1DEBDB9900979E23 /* HYL_TabBar.m in Sources */,
 				05D45F621DEBCE6C00979E23 /* HNavigationController.m in Sources */,
+				05D45F941DEE761D00979E23 /* HYLCollectionView.m in Sources */,
+				050D8C1F1DF6964A00F9D1BA /* HYLTypeShowViewController.m in Sources */,
 				05D45F8D1DEC364C00979E23 /* ScaleFlowLayout.m in Sources */,
+				05D45F9C1DEE9D6F00979E23 /* bannerScroll.m in Sources */,
+				05D45F9F1DEEA1A700979E23 /* HYLHomeListCell.m in Sources */,
 				05D45F531DEBCD4A00979E23 /* HYLTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +821,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hu.tianxiagou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -698,6 +835,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hu.tianxiagou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 			};
 			name = Release;
 		};
