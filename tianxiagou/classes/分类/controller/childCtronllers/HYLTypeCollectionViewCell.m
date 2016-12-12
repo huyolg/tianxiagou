@@ -7,6 +7,7 @@
 //
 
 #import "HYLTypeCollectionViewCell.h"
+#import "UIImage+Clip.h"
 
 @interface HYLTypeCollectionViewCell ()
 
@@ -23,8 +24,8 @@
     if (!_imageView) {
         _imageView = [[UIView alloc]init];
         _imageView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.width);
-        _imageView.layer.borderWidth = 1;
-        _imageView.layer.borderColor = [UIColor redColor].CGColor;
+//        _imageView.layer.borderWidth = 1;
+//        _imageView.layer.borderColor = [UIColor redColor].CGColor;
     }
     return _imageView;
 }
@@ -35,9 +36,10 @@
         _titleLabel.frame = CGRectMake(0, self.frame.size.height-20, self.frame.size.width, 20);
         _titleLabel.numberOfLines =0;
         _titleLabel.font = [UIFont systemFontOfSize:16];
-        _titleLabel.textColor = [UIColor whiteColor];
+//        _titleLabel.textColor = [UIColor whiteColor];
         _titleLabel.backgroundColor = [UIColor blackColor];
         _titleLabel.layer.masksToBounds = YES;
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
     }
     return _titleLabel;
 }
@@ -48,6 +50,9 @@
     
     [self.contentView addSubview:self.titleLabel];
     
+    self.titleLabel.text = model.title;
+    
+    
     if (model.clipedImage) {
 
         self.imageView.layer.contents = (__bridge id _Nullable)(model.clipedImage.CGImage);
@@ -55,7 +60,7 @@
         
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         UIImage *image = [UIImage imageNamed:model.imageName];
-        image = [self clipImage:image toSize:self.imageView.frame.size];
+        image = [UIImage clipImage:image toSize:self.imageView.frame.size];
         dispatch_async(dispatch_get_main_queue(), ^{
             model.clipedImage = image;
             self.imageView.layer.contents = (__bridge id _Nullable)(model.clipedImage.CGImage);
@@ -64,20 +69,20 @@
     }
 }
 
-- (UIImage *)clipImage:(UIImage *)image toSize:(CGSize)size
-{
-    UIGraphicsBeginImageContextWithOptions(size, YES, [UIScreen mainScreen].scale);
-    
-    CGSize imgSize = image.size;
-    CGFloat x = MAX(size.width / imgSize.width, size.height / imgSize.height);
-    CGSize resultSize = CGSizeMake(x*imgSize.width, x*imgSize.height);
-    
-    [image drawInRect:CGRectMake(0, 0, resultSize.width, resultSize.height)];
-    
-    UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return finalImage;
-}
+//- (UIImage *)clipImage:(UIImage *)image toSize:(CGSize)size
+//{
+//    UIGraphicsBeginImageContextWithOptions(size, YES, [UIScreen mainScreen].scale);
+//    
+//    CGSize imgSize = image.size;
+//    CGFloat x = MAX(size.width / imgSize.width, size.height / imgSize.height);
+//    CGSize resultSize = CGSizeMake(x*imgSize.width, x*imgSize.height);
+//    
+//    [image drawInRect:CGRectMake(0, 0, resultSize.width, resultSize.height)];
+//    
+//    UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    
+//    return finalImage;
+//}
 
 @end

@@ -28,7 +28,7 @@ NSString *const identifierCell = @"identifierCell";
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-        layout.itemSize = CGSizeMake((self.view.frame.size.width-30-120)/2,(self.view.frame.size.width-120-30)/2 + 20 );
+        layout.itemSize = CGSizeMake((self.view.frame.size.width-30-120)/3,(self.view.frame.size.width-120-30)/3 + 20 );
         layout.minimumLineSpacing = 10;
         layout.minimumInteritemSpacing = 10;
         
@@ -50,7 +50,7 @@ NSString *const identifierCell = @"identifierCell";
         model.imageName = [NSString stringWithFormat:@"img%ld.jpg",(long)i];
         model.title = [NSString stringWithFormat:@"item%ld",i];
         [dataArr addObject:model];
-        NSLog(@"datasouce %@",dataArr);
+        NSLog(@"datasouce %@",model.title);
     }
     self.automaticallyAdjustsScrollViewInsets = YES;
     [self.view addSubview:self.collectionView];

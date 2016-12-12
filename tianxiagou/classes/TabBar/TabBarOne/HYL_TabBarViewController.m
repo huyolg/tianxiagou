@@ -11,8 +11,8 @@
 #import "HYL_TabBar.h"
 #import "HYLTypeViewController.h"
 #import "HYLHomeViewController.h"
-//#import "HYL_MediuViewController.h"
-//#import "MineViewController.h"
+#import "HYLShoppingListVC.h"
+#import "HYLMineViewController.h"
 
 @interface HYL_TabBarViewController ()<HYLTabBarDelegate>
 @property (weak, nonatomic) HYL_TabBar *customTabBar;
@@ -66,10 +66,10 @@
     HYLTypeViewController *mediuVC = [[HYLTypeViewController alloc]init];
     [self setupChildViewController:mediuVC title:@"分类" imageName:@"tabBar_type" selectedImageName:@"tabBar_typeSec"];
     
-    UIViewController *cartVC = [[UIViewController alloc]init];
+    HYLShoppingListVC *cartVC = [[HYLShoppingListVC alloc]init];
     [self setupChildViewController:cartVC title:@"购物车" imageName:@"tabBar_cart" selectedImageName:@"tabBar_cartSec"];
     
-    UIViewController *mineVC = [[UIViewController alloc]init];
+    HYLMineViewController *mineVC = [[HYLMineViewController alloc]init];
     [self setupChildViewController:mineVC title:@"个人" imageName:@"tabBar_mine" selectedImageName:@"tabBar_mineSec"];
 }
 

@@ -48,7 +48,7 @@
     [navigationBar addSubview:TFSearch];
     
     UIButton *btnRight = [UIButton buttonWithType:UIButtonTypeCustom];
-    btnRight.frame = CGRectMake(self.view.frame.size.width-40, 25, 25, 25);
+    btnRight.frame = CGRectMake(self.view.frame.size.width-40, 30, 25, 25);
     [btnRight setBackgroundImage:[UIImage imageNamed:@"message"] forState:UIControlStateNormal];
     [navigationBar addSubview:btnRight];
 }

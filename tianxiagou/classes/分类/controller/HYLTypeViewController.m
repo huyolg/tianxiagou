@@ -146,7 +146,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    scrollView.contentOffset = CGPointMake(0, 64+(indexPath.row)*self.view.frame.size.height);
+    scrollView.contentOffset = CGPointMake(0, (indexPath.row)*self.view.frame.size.height);
 
 }
 

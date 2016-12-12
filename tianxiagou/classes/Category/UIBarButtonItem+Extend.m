@@ -22,7 +22,7 @@
 + (UIBarButtonItem *)itemWithIcon:(NSString *)imageName target:(id)target action:(SEL)action{
     UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [rightBtn setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-    rightBtn.bounds = CGRectMake(0, 0, 40, 40);
+    rightBtn.bounds = CGRectMake(0, 0, 25, 25);
     [rightBtn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return [[UIBarButtonItem alloc]initWithCustomView:rightBtn];
 }
