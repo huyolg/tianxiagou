@@ -8,41 +8,91 @@
 
 #import "MineTableViewCell.h"
 #import "Masonry.h"
-#import "UIButton+Reset.h"
+#import "UIButton_Reset.h"
+#import "UIButton_Num.h"
 
 @implementation MineTableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier indexpath:(NSIndexPath*)indexPath
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     if (indexPath.section == 0) {
-       [self creatSectionOne];
+        if (indexPath.row == 0) {
+            [self createAllOrder];
+        }else{
+            [self creatSectionOne];
+        }
+       
     }
     
     return self;
 }
 
+- (void)createAllOrder
+{
+    CGFloat MHeight = self.frame.size.height;//[UIScreen mainScreen].bounds.size.height;
+    CGFloat DHeight = MHeight/3;
+    
+    UILabel *titleLabel = [[UILabel alloc]init];
+    titleLabel.text = @"全部订单";
+    titleLabel.textColor = [UIColor grayColor];
+    titleLabel.font = [UIFont systemFontOfSize:14];
+    [self addSubview:titleLabel];
+    [titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_offset(20);
+        make.top.mas_offset(DHeight);
+        make.bottom.mas_offset(-DHeight);
+    }];
+    
+    UILabel *subLabel = [[UILabel alloc]init];
+    subLabel.text = @"查看全部订单>";
+    subLabel.textColor = [UIColor lightGrayColor];
+    subLabel.font = [UIFont systemFontOfSize:13];
+    [self addSubview:subLabel];
+    [subLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_offset(DHeight);
+        make.bottom.mas_offset(-DHeight);
+        make.right.mas_offset(-20);
+    }];
+}
+
 - (void)creatSectionOne
 {
+    NSArray *arrIcon = @[@"willPay",@"willSend",@"willTake",@"willAppraise"];
+    NSArray *arrTitle = @[@"待付款",@"代发货",@"待收货",@"待评价"];
     CGFloat MWidth = [UIScreen mainScreen].bounds.size.width;
     CGFloat DWidth = (MWidth-(8*20))/4;
     
     for (int i = 0; i < 4; i++) {
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [btn setImage:[UIImage imageNamed:@"img1.jpg"] forState:UIControlStateNormal];
-        [btn setTitle:@"评价" forState:UIControlStateNormal];
+        UIButton_Reset *btn = [UIButton_Reset buttonWithType:UIButtonTypeCustom];
+        [btn setImage:[UIImage imageNamed:arrIcon[i]] forState:UIControlStateNormal];
+        [btn setTitle:arrTitle[i] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont systemFontOfSize:12];
         btn.titleLabel.textAlignment = NSTextAlignmentCenter;
-        
+        [btn addTarget:self action:@selector(payAction:) forControlEvents:UIControlEventTouchUpInside];
+        btn.tag = 100+i;
         [self addSubview:btn];
         [btn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_offset(20+(DWidth+40)*i);
             make.width.mas_offset(DWidth);
-            make.top.mas_offset(10);
-            make.bottom.mas_offset(-10);
+            make.top.mas_offset(20);
+            make.bottom.mas_offset(-20);
         }];
+    }
+}
+
+- (void)payAction:(UIButton_Reset*)button
+{
+    if (button.tag == 100) {
+        NSLog(@"代付款");
+    }else if (button.tag == 101){
+        NSLog(@"代发货");
+    }else if (button.tag == 102){
+        NSLog(@"待收货");
+    }else{
+        NSLog(@"待评价");
     }
 }
 

@@ -11,21 +11,35 @@
 #import "Masonry.h"
 #import "UIImage+Clip.h"
 #import "MineTableViewCell.h"
+#import "MineModel.h"
 
 NSString *const identifierID = @"identifierID";
 
 @interface HYLMineViewController ()<UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic,strong) MineModel *mineMoel;
+
 @end
 
 @implementation HYLMineViewController
+
+- (MineModel *)mineMoel
+{
+    if (!_mineMoel) {
+        _mineMoel = [[MineModel alloc]init];
+        _mineMoel.headerUrlStr = @"";
+        _mineMoel.nickName = @"非法用户";
+        _mineMoel.levelStr = @"酒剑仙";
+    }
+    return _mineMoel;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithIcon:@"message" target:self action:@selector(comnicationShow)];
-    
+
     [self createMineTableView];
 }
 
@@ -42,15 +56,18 @@ NSString *const identifierID = @"identifierID";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (section == 0) {
-        return 1;
+        return 2;
     }
-    return 4;
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
-        return 88;
+        if (indexPath.row == 1) {
+            return 88;
+        }
+        return 44;
     }
     return 44;
 }
@@ -75,6 +92,9 @@ NSString *const identifierID = @"identifierID";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
+    if (section == 0) {
+        return 0;
+    }
     return 6.5;
 }
 

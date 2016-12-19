@@ -25,20 +25,12 @@
 		050D8C4B1DF8128700F9D1BA /* HYLShoppingListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C4A1DF8128700F9D1BA /* HYLShoppingListVC.m */; };
 		050D8C4E1DF8F63F00F9D1BA /* HYLShoppingListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C4D1DF8F63F00F9D1BA /* HYLShoppingListCell.m */; };
 		050D8C511DF9045200F9D1BA /* ShoppingListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C501DF9045200F9D1BA /* ShoppingListModel.m */; };
-		050D8C6E1DF90AE500F9D1BA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 050D8C541DF90AE500F9D1BA /* Info.plist */; };
-		050D8C6F1DF90AE500F9D1BA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C561DF90AE500F9D1BA /* MASCompositeConstraint.m */; };
-		050D8C701DF90AE500F9D1BA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C591DF90AE500F9D1BA /* MASConstraint.m */; };
-		050D8C711DF90AE500F9D1BA /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C5B1DF90AE500F9D1BA /* MASConstraintMaker.m */; };
-		050D8C721DF90AE500F9D1BA /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C5D1DF90AE500F9D1BA /* MASLayoutConstraint.m */; };
-		050D8C731DF90AE500F9D1BA /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C611DF90AE500F9D1BA /* MASViewAttribute.m */; };
-		050D8C741DF90AE500F9D1BA /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C631DF90AE500F9D1BA /* MASViewConstraint.m */; };
-		050D8C751DF90AE500F9D1BA /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C651DF90AE500F9D1BA /* NSArray+MASAdditions.m */; };
-		050D8C761DF90AE500F9D1BA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C681DF90AE500F9D1BA /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		050D8C771DF90AE500F9D1BA /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C6A1DF90AE500F9D1BA /* View+MASAdditions.m */; };
-		050D8C781DF90AE500F9D1BA /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 050D8C6D1DF90AE500F9D1BA /* ViewController+MASAdditions.m */; };
 		0511FAC01DFE39080062593A /* UIImage+Clip.m in Sources */ = {isa = PBXBuildFile; fileRef = 0511FABF1DFE39080062593A /* UIImage+Clip.m */; };
 		0511FAC31DFE6B620062593A /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0511FAC21DFE6B620062593A /* MineTableViewCell.m */; };
-		0511FAC61DFE8AA90062593A /* UIButton+Reset.m in Sources */ = {isa = PBXBuildFile; fileRef = 0511FAC51DFE8AA90062593A /* UIButton+Reset.m */; };
+		0511FAC61DFE8AA90062593A /* UIButton_Reset.m in Sources */ = {isa = PBXBuildFile; fileRef = 0511FAC51DFE8AA90062593A /* UIButton_Reset.m */; };
+		0511FAC91DFEAE7E0062593A /* HYLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0511FAC81DFEAE7E0062593A /* HYLLoginViewController.m */; };
+		0511FACC1DFEAF370062593A /* MineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0511FACB1DFEAF370062593A /* MineModel.m */; };
+		0511FACF1DFFEC2C0062593A /* UIButton_Num.m in Sources */ = {isa = PBXBuildFile; fileRef = 0511FACE1DFFEC2C0062593A /* UIButton_Num.m */; };
 		05A0DA961DFA9FA600B091AF /* HYLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A0DA951DFA9FA600B091AF /* HYLMineViewController.m */; };
 		05D45F531DEBCD4A00979E23 /* HYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F501DEBCD4A00979E23 /* HYLTabBar.m */; };
 		05D45F541DEBCD4A00979E23 /* HYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F521DEBCD4A00979E23 /* HYLTabBarController.m */; };
@@ -74,6 +66,7 @@
 		05EF3B961DCAE10700A5EC57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05EF3B941DCAE10700A5EC57 /* LaunchScreen.storyboard */; };
 		05EF3BA11DCAE10800A5EC57 /* tianxiagouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EF3BA01DCAE10800A5EC57 /* tianxiagouTests.m */; };
 		05EF3BAC1DCAE10800A5EC57 /* tianxiagouUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05EF3BAB1DCAE10800A5EC57 /* tianxiagouUITests.m */; };
+		3755B490150AF2B1BDDCBB8B /* libPods-tianxiagou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 887EEE57C9C8D70F6DF73F4E /* libPods-tianxiagou.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,38 +111,18 @@
 		050D8C4D1DF8F63F00F9D1BA /* HYLShoppingListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLShoppingListCell.m; sourceTree = "<group>"; };
 		050D8C4F1DF9045200F9D1BA /* ShoppingListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingListModel.h; sourceTree = "<group>"; };
 		050D8C501DF9045200F9D1BA /* ShoppingListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingListModel.m; sourceTree = "<group>"; };
-		050D8C541DF90AE500F9D1BA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		050D8C551DF90AE500F9D1BA /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		050D8C561DF90AE500F9D1BA /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		050D8C571DF90AE500F9D1BA /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		050D8C581DF90AE500F9D1BA /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		050D8C591DF90AE500F9D1BA /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		050D8C5A1DF90AE500F9D1BA /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		050D8C5B1DF90AE500F9D1BA /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		050D8C5C1DF90AE500F9D1BA /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		050D8C5D1DF90AE500F9D1BA /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		050D8C5E1DF90AE500F9D1BA /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		050D8C5F1DF90AE500F9D1BA /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		050D8C601DF90AE500F9D1BA /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		050D8C611DF90AE500F9D1BA /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		050D8C621DF90AE500F9D1BA /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		050D8C631DF90AE500F9D1BA /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		050D8C641DF90AE500F9D1BA /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		050D8C651DF90AE500F9D1BA /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		050D8C661DF90AE500F9D1BA /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		050D8C671DF90AE500F9D1BA /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		050D8C681DF90AE500F9D1BA /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		050D8C691DF90AE500F9D1BA /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		050D8C6A1DF90AE500F9D1BA /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		050D8C6B1DF90AE500F9D1BA /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		050D8C6C1DF90AE500F9D1BA /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		050D8C6D1DF90AE500F9D1BA /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		0511FABE1DFE39080062593A /* UIImage+Clip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Clip.h"; sourceTree = "<group>"; };
 		0511FABF1DFE39080062593A /* UIImage+Clip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Clip.m"; sourceTree = "<group>"; };
 		0511FAC11DFE6B620062593A /* MineTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
 		0511FAC21DFE6B620062593A /* MineTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
-		0511FAC41DFE8AA90062593A /* UIButton+Reset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Reset.h"; sourceTree = "<group>"; };
-		0511FAC51DFE8AA90062593A /* UIButton+Reset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Reset.m"; sourceTree = "<group>"; };
+		0511FAC41DFE8AA90062593A /* UIButton_Reset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButton_Reset.h; sourceTree = "<group>"; };
+		0511FAC51DFE8AA90062593A /* UIButton_Reset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButton_Reset.m; sourceTree = "<group>"; };
+		0511FAC71DFEAE7E0062593A /* HYLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLLoginViewController.h; sourceTree = "<group>"; };
+		0511FAC81DFEAE7E0062593A /* HYLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLLoginViewController.m; sourceTree = "<group>"; };
+		0511FACA1DFEAF370062593A /* MineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineModel.h; sourceTree = "<group>"; };
+		0511FACB1DFEAF370062593A /* MineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModel.m; sourceTree = "<group>"; };
+		0511FACD1DFFEC2C0062593A /* UIButton_Num.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButton_Num.h; sourceTree = "<group>"; };
+		0511FACE1DFFEC2C0062593A /* UIButton_Num.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButton_Num.m; sourceTree = "<group>"; };
 		05A0DA941DFA9FA600B091AF /* HYLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLMineViewController.h; sourceTree = "<group>"; };
 		05A0DA951DFA9FA600B091AF /* HYLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLMineViewController.m; sourceTree = "<group>"; };
 		05D45F4F1DEBCD4A00979E23 /* HYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLTabBar.h; sourceTree = "<group>"; };
@@ -215,6 +188,9 @@
 		05EF3BA71DCAE10800A5EC57 /* tianxiagouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tianxiagouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EF3BAB1DCAE10800A5EC57 /* tianxiagouUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tianxiagouUITests.m; sourceTree = "<group>"; };
 		05EF3BAD1DCAE10800A5EC57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191EDB74A9A6673E73C2AD55 /* Pods-tianxiagou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tianxiagou.release.xcconfig"; path = "Pods/Target Support Files/Pods-tianxiagou/Pods-tianxiagou.release.xcconfig"; sourceTree = "<group>"; };
+		5538FC19DBE5AA934ED9B1F6 /* Pods-tianxiagou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tianxiagou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tianxiagou/Pods-tianxiagou.debug.xcconfig"; sourceTree = "<group>"; };
+		887EEE57C9C8D70F6DF73F4E /* libPods-tianxiagou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tianxiagou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3755B490150AF2B1BDDCBB8B /* libPods-tianxiagou.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,42 +292,8 @@
 		050D8C521DF90AE500F9D1BA /* library */ = {
 			isa = PBXGroup;
 			children = (
-				050D8C531DF90AE500F9D1BA /* Masonry */,
 			);
 			path = library;
-			sourceTree = "<group>";
-		};
-		050D8C531DF90AE500F9D1BA /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				050D8C541DF90AE500F9D1BA /* Info.plist */,
-				050D8C551DF90AE500F9D1BA /* MASCompositeConstraint.h */,
-				050D8C561DF90AE500F9D1BA /* MASCompositeConstraint.m */,
-				050D8C571DF90AE500F9D1BA /* MASConstraint+Private.h */,
-				050D8C581DF90AE500F9D1BA /* MASConstraint.h */,
-				050D8C591DF90AE500F9D1BA /* MASConstraint.m */,
-				050D8C5A1DF90AE500F9D1BA /* MASConstraintMaker.h */,
-				050D8C5B1DF90AE500F9D1BA /* MASConstraintMaker.m */,
-				050D8C5C1DF90AE500F9D1BA /* MASLayoutConstraint.h */,
-				050D8C5D1DF90AE500F9D1BA /* MASLayoutConstraint.m */,
-				050D8C5E1DF90AE500F9D1BA /* Masonry.h */,
-				050D8C5F1DF90AE500F9D1BA /* MASUtilities.h */,
-				050D8C601DF90AE500F9D1BA /* MASViewAttribute.h */,
-				050D8C611DF90AE500F9D1BA /* MASViewAttribute.m */,
-				050D8C621DF90AE500F9D1BA /* MASViewConstraint.h */,
-				050D8C631DF90AE500F9D1BA /* MASViewConstraint.m */,
-				050D8C641DF90AE500F9D1BA /* NSArray+MASAdditions.h */,
-				050D8C651DF90AE500F9D1BA /* NSArray+MASAdditions.m */,
-				050D8C661DF90AE500F9D1BA /* NSArray+MASShorthandAdditions.h */,
-				050D8C671DF90AE500F9D1BA /* NSLayoutConstraint+MASDebugAdditions.h */,
-				050D8C681DF90AE500F9D1BA /* NSLayoutConstraint+MASDebugAdditions.m */,
-				050D8C691DF90AE500F9D1BA /* View+MASAdditions.h */,
-				050D8C6A1DF90AE500F9D1BA /* View+MASAdditions.m */,
-				050D8C6B1DF90AE500F9D1BA /* View+MASShorthandAdditions.h */,
-				050D8C6C1DF90AE500F9D1BA /* ViewController+MASAdditions.h */,
-				050D8C6D1DF90AE500F9D1BA /* ViewController+MASAdditions.m */,
-			);
-			path = Masonry;
 			sourceTree = "<group>";
 		};
 		05A0DA901DFA9F8900B091AF /* 个人中心 */ = {
@@ -375,6 +318,8 @@
 		05A0DA921DFA9F8900B091AF /* model */ = {
 			isa = PBXGroup;
 			children = (
+				0511FACA1DFEAF370062593A /* MineModel.h */,
+				0511FACB1DFEAF370062593A /* MineModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -419,8 +364,10 @@
 				05D45F5B1DEBCE1200979E23 /* UIView+Extend.m */,
 				0511FABE1DFE39080062593A /* UIImage+Clip.h */,
 				0511FABF1DFE39080062593A /* UIImage+Clip.m */,
-				0511FAC41DFE8AA90062593A /* UIButton+Reset.h */,
-				0511FAC51DFE8AA90062593A /* UIButton+Reset.m */,
+				0511FAC41DFE8AA90062593A /* UIButton_Reset.h */,
+				0511FAC51DFE8AA90062593A /* UIButton_Reset.m */,
+				0511FACD1DFFEC2C0062593A /* UIButton_Num.h */,
+				0511FACE1DFFEC2C0062593A /* UIButton_Num.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -576,6 +523,8 @@
 				05EF3B9F1DCAE10800A5EC57 /* tianxiagouTests */,
 				05EF3BAA1DCAE10800A5EC57 /* tianxiagouUITests */,
 				05EF3B841DCAE10700A5EC57 /* Products */,
+				760A97F97A43BB189A0A2E61 /* Pods */,
+				B60422F623D8C2FAE95C8BC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -663,6 +612,8 @@
 		05EF3BBB1DCAE80600A5EC57 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				0511FAC71DFEAE7E0062593A /* HYLLoginViewController.h */,
+				0511FAC81DFEAE7E0062593A /* HYLLoginViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -681,6 +632,23 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		760A97F97A43BB189A0A2E61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5538FC19DBE5AA934ED9B1F6 /* Pods-tianxiagou.debug.xcconfig */,
+				191EDB74A9A6673E73C2AD55 /* Pods-tianxiagou.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B60422F623D8C2FAE95C8BC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				887EEE57C9C8D70F6DF73F4E /* libPods-tianxiagou.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -688,9 +656,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05EF3BB01DCAE10800A5EC57 /* Build configuration list for PBXNativeTarget "tianxiagou" */;
 			buildPhases = (
+				18568536696BC5BB2A081C26 /* [CP] Check Pods Manifest.lock */,
 				05EF3B7F1DCAE10700A5EC57 /* Sources */,
 				05EF3B801DCAE10700A5EC57 /* Frameworks */,
 				05EF3B811DCAE10700A5EC57 /* Resources */,
+				599865A8D4C3BA97D72CD2AC /* [CP] Embed Pods Frameworks */,
+				1DBBF5D012522B01031A8EE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -810,7 +781,6 @@
 				05EF3B931DCAE10700A5EC57 /* Assets.xcassets in Resources */,
 				050D8C411DF6BB5900F9D1BA /* img6.jpg in Resources */,
 				05EF3B911DCAE10700A5EC57 /* Main.storyboard in Resources */,
-				050D8C6E1DF90AE500F9D1BA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,6 +800,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18568536696BC5BB2A081C26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1DBBF5D012522B01031A8EE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tianxiagou/Pods-tianxiagou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		599865A8D4C3BA97D72CD2AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tianxiagou/Pods-tianxiagou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05EF3B7F1DCAE10700A5EC57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -839,12 +857,9 @@
 				05D45F981DEE7D8200979E23 /* HYLHomeList.m in Sources */,
 				05D45F5C1DEBCE1200979E23 /* UIBarButtonItem+Extend.m in Sources */,
 				05D45F771DEC03EC00979E23 /* HYLHomeViewController.m in Sources */,
-				050D8C751DF90AE500F9D1BA /* NSArray+MASAdditions.m in Sources */,
 				05D45FB71DF0073F00979E23 /* HYLSliderViewController.m in Sources */,
 				05EF3B8E1DCAE10700A5EC57 /* ViewController.m in Sources */,
 				05D45F7B1DEC080300979E23 /* HYLNavigationBar.m in Sources */,
-				050D8C771DF90AE500F9D1BA /* View+MASAdditions.m in Sources */,
-				050D8C6F1DF90AE500F9D1BA /* MASCompositeConstraint.m in Sources */,
 				0511FAC31DFE6B620062593A /* MineTableViewCell.m in Sources */,
 				05D45F6B1DEBDB9900979E23 /* HYL_TabBarButton.m in Sources */,
 				050D8C4E1DF8F63F00F9D1BA /* HYLShoppingListCell.m in Sources */,
@@ -854,27 +869,23 @@
 				0511FAC01DFE39080062593A /* UIImage+Clip.m in Sources */,
 				05D45F871DEC364C00979E23 /* CollectionViewCell.m in Sources */,
 				050D8C511DF9045200F9D1BA /* ShoppingListModel.m in Sources */,
-				050D8C731DF90AE500F9D1BA /* MASViewAttribute.m in Sources */,
+				0511FACC1DFEAF370062593A /* MineModel.m in Sources */,
 				05D45F6C1DEBDB9900979E23 /* HYL_TabBarViewController.m in Sources */,
-				050D8C701DF90AE500F9D1BA /* MASConstraint.m in Sources */,
 				05EF3B8B1DCAE10700A5EC57 /* AppDelegate.m in Sources */,
 				05A0DA961DFA9FA600B091AF /* HYLMineViewController.m in Sources */,
 				050D8C2B1DF6AD6600F9D1BA /* typeModel.m in Sources */,
 				05D45FB41DF003AF00979E23 /* HYLChildViewController.m in Sources */,
-				050D8C711DF90AE500F9D1BA /* MASConstraintMaker.m in Sources */,
 				05D45F5D1DEBCE1200979E23 /* UIColor+Hex.m in Sources */,
 				05D45F741DEC03BB00979E23 /* HYLBaseViewController.m in Sources */,
-				050D8C781DF90AE500F9D1BA /* ViewController+MASAdditions.m in Sources */,
 				05EF3B881DCAE10700A5EC57 /* main.m in Sources */,
 				05D45F5E1DEBCE1200979E23 /* UIView+Extend.m in Sources */,
-				050D8C761DF90AE500F9D1BA /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				05D45F6A1DEBDB9900979E23 /* HYL_TabBar.m in Sources */,
-				050D8C741DF90AE500F9D1BA /* MASViewConstraint.m in Sources */,
 				05D45F621DEBCE6C00979E23 /* HNavigationController.m in Sources */,
 				05D45F941DEE761D00979E23 /* HYLCollectionView.m in Sources */,
-				050D8C721DF90AE500F9D1BA /* MASLayoutConstraint.m in Sources */,
+				0511FAC91DFEAE7E0062593A /* HYLLoginViewController.m in Sources */,
 				050D8C1F1DF6964A00F9D1BA /* HYLTypeShowViewController.m in Sources */,
-				0511FAC61DFE8AA90062593A /* UIButton+Reset.m in Sources */,
+				0511FACF1DFFEC2C0062593A /* UIButton_Num.m in Sources */,
+				0511FAC61DFE8AA90062593A /* UIButton_Reset.m in Sources */,
 				05D45F8D1DEC364C00979E23 /* ScaleFlowLayout.m in Sources */,
 				05D45F9C1DEE9D6F00979E23 /* bannerScroll.m in Sources */,
 				05D45F9F1DEEA1A700979E23 /* HYLHomeListCell.m in Sources */,
@@ -1025,12 +1036,13 @@
 		};
 		05EF3BB11DCAE10800A5EC57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5538FC19DBE5AA934ED9B1F6 /* Pods-tianxiagou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 883YG8W8Z4;
 				INFOPLIST_FILE = tianxiagou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hu.tianxiagou;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hu.jiugui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -1039,12 +1051,13 @@
 		};
 		05EF3BB21DCAE10800A5EC57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 191EDB74A9A6673E73C2AD55 /* Pods-tianxiagou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 883YG8W8Z4;
 				INFOPLIST_FILE = tianxiagou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hu.tianxiagou;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hu.jiugui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
