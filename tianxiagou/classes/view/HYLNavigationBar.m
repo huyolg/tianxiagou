@@ -11,12 +11,31 @@
 
 @implementation HYLNavigationBar
 
-- (instancetype)init{
+- (instancetype)initWithType:(HYLNavigationBarShowType )type{
     self = [super init];
     if (self) {
-        [self createNavigationBarWithSearch];
+        if (type == HYLNaviBarShowType_Needed) {
+//            NSLog(@"-=-=-=-=-=");
+            [self createLeftCancleUI];
+        }else if (type == HYLNaviBarShowType_Other){
+            [self createNavigationBarWithSearch];
+        }
     }
     return self;
+}
+
+- (void)createLeftCancleUI
+{
+    UIView *navigationBar = [[UIView alloc]init];
+    navigationBar.alpha = 0.5;
+    navigationBar.backgroundColor = [UIColor whiteColor];
+    navigationBar.frame = CGRectMake(0, 0, 64, 64);
+    [self.view addSubview:navigationBar];
+    
+    UIButton *btnLeft = [UIButton buttonWithType:UIButtonTypeCustom];
+    btnLeft.frame = CGRectMake(15, 25, 25, 25);
+    [btnLeft setBackgroundImage:[UIImage imageNamed:@"cancel"] forState:UIControlStateNormal];
+    [navigationBar addSubview:btnLeft];
 }
 
 - (void) createNavigationBarWithSearch{

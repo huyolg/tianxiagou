@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+
+typedef enum : NSUInteger {
+    HYLNaviBarShowType_Needed,
+    HYLNaviBarShowType_First,
+    HYLNaviBarShowType_Other,
+} HYLNavigationBarShowType;
+
 @interface HYLNavigationBar : UIViewController
 
-//- (instancetype)initWithFrame:(CGRect)frame;
+- (instancetype)initWithType:(HYLNavigationBarShowType)type;
 
-- (void) createNavigationBarWithSearch:(CGRect)frame;
+//- (void) createNavigationBarWithSearch:(CGRect)frame;
 
 @end

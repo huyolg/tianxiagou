@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = YES;
-    HYLNavigationBar *navigationBar = [[HYLNavigationBar alloc]init];
+    HYLNavigationBar *navigationBar = [[HYLNavigationBar alloc]initWithType:HYLNaviBarShowType_Other];
     navigationBar.view.frame = CGRectMake(0, 0, self.view.frame.size.width, 64);
     [self.view addSubview:navigationBar.view];
     

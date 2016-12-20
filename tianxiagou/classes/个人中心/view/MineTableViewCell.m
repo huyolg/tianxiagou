@@ -24,6 +24,8 @@
             [self creatSectionOne];
         }
        
+    }else{
+        [self createSectionTwo];
     }
     
     return self;
@@ -82,6 +84,39 @@
         }];
     }
 }
+
+- (void)createSectionTwo
+{
+    self.imgIcon = [[UIImageView alloc]init];
+
+    [self addSubview:self.imgIcon];
+    [self.imgIcon mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self).offset(self.frame.size.height/4);
+        make.bottom.mas_equalTo(self).offset(-self.frame.size.height/4);
+        make.left.mas_equalTo(self).offset(self.frame.size.height/4);
+        make.width.mas_offset(22);
+    }];
+    self.titleLabel = [[UILabel alloc]init];
+    self.titleLabel.font = [UIFont systemFontOfSize:13];
+    [self addSubview:self.titleLabel];
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_offset(10);
+        make.left.mas_equalTo(self.imgIcon.mas_right).offset(15);
+        make.bottom.mas_offset(-10);
+    }];
+    
+    UIImageView *nextIcon = [[UIImageView alloc]init];
+    nextIcon.image = [UIImage imageNamed:@"next"];
+    [self addSubview:nextIcon];
+    [nextIcon mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(self.mas_centerY);
+        make.right.mas_offset(-15);
+        make.top.mas_equalTo(self).offset(14.5);
+        make.bottom.mas_offset(-14.5);
+        make.left.mas_equalTo(self.mas_right).offset(-self.frame.size.height+29-15);
+    }];
+}
+
 
 - (void)payAction:(UIButton_Reset*)button
 {

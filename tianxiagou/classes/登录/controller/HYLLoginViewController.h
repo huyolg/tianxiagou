@@ -7,7 +7,10 @@
 //
 
 #import "HYLBaseViewController.h"
+#import "HYLNavigationBar.h"
 
 @interface HYLLoginViewController : HYLBaseViewController
+
+@property (nonatomic) HYLNavigationBarShowType type;
 
 @end

@@ -12,12 +12,18 @@
 #import "UIImage+Clip.h"
 #import "MineTableViewCell.h"
 #import "MineModel.h"
+#import "HYLLoginViewController.h"
+#import "HYLNavigationBar.h"
 
 NSString *const identifierID = @"identifierID";
 
 @interface HYLMineViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) MineModel *mineMoel;
+
+@property (nonatomic,strong) NSArray *arrTitle;
+
+@property (nonatomic,strong) NSArray *arrIcon;
 
 @end
 
@@ -32,6 +38,22 @@ NSString *const identifierID = @"identifierID";
         _mineMoel.levelStr = @"酒剑仙";
     }
     return _mineMoel;
+}
+
+- (NSArray *)arrTitle
+{
+    if (!_arrTitle) {
+        _arrTitle = @[@"我的积分",@"我的优惠券",@"售后",@"修改账号信息",@"修改密码",@"收货地址管理"];
+    }
+    return _arrTitle;
+}
+
+- (NSArray *)arrIcon
+{
+    if (!_arrIcon) {
+        _arrIcon = @[@"myIntegral",@"coupon",@"mySale",@"account",@"changepwd",@"address"];
+    }
+    return _arrIcon;
 }
 
 - (void)viewDidLoad {
@@ -58,7 +80,7 @@ NSString *const identifierID = @"identifierID";
     if (section == 0) {
         return 2;
     }
-    return 1;
+    return self.arrTitle.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -73,7 +95,7 @@ NSString *const identifierID = @"identifierID";
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 3;
+    return 2;
 }
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -82,7 +104,8 @@ NSString *const identifierID = @"identifierID";
     if (!cell) {
         cell = [[MineTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifierID indexpath:indexPath];
     }
-    
+    cell.titleLabel.text = self.arrTitle[indexPath.row];
+    cell.imgIcon.image = [UIImage imageNamed:self.arrIcon[indexPath.row]];
     return cell;
 }
 
@@ -96,6 +119,15 @@ NSString *const identifierID = @"identifierID";
         return 0;
     }
     return 6.5;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    HYLLoginViewController *loginVC = [[HYLLoginViewController alloc]init];
+    loginVC.type = HYLNaviBarShowType_Needed;
+    [self.navigationController presentViewController:loginVC animated:YES completion:^{
+        nil;
+    }];
 }
 
 - (UIView*)resetTableHeardView
@@ -112,10 +144,11 @@ NSString *const identifierID = @"identifierID";
     //头像
     UIImageView *headerIcon = [[UIImageView alloc]init];
     headerIcon.layer.borderWidth = 3;
+    headerIcon.backgroundColor = [UIColor whiteColor];
     headerIcon.layer.cornerRadius = ((self.view.frame.size.height/5)/4);
     headerIcon.layer.masksToBounds = YES;
     headerIcon.layer.borderColor = [UIColor colorWithWhite:1 alpha:0.5].CGColor;
-    UIImage *image = [UIImage imageNamed:@"img1.jpg"];
+    UIImage *image = [UIImage imageNamed:@"default_heardIcon"];
     image = [UIImage clipImage:image toSize:CGSizeMake((self.view.frame.size.height/5), (self.view.frame.size.height/5))];
     headerIcon.image = image;
     [view addSubview:headerIcon];
@@ -128,7 +161,7 @@ NSString *const identifierID = @"identifierID";
     
     //昵称
     UILabel *nickName = [[UILabel alloc]init];
-    nickName.text = @"江湖浪子";
+    nickName.text = @"登录/注册";
     nickName.textColor = [UIColor whiteColor];
     nickName.font = [UIFont systemFontOfSize:14];
     [view addSubview:nickName];

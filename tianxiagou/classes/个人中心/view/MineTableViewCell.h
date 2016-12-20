@@ -10,6 +10,11 @@
 
 @interface MineTableViewCell : UITableViewCell
 
+@property (nonatomic,strong) UIImageView *imgIcon ;
+
+@property (nonatomic,strong) UILabel *titleLabel;
+
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier indexpath:(NSIndexPath*)indexPath;
 
 @end

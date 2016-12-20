@@ -31,6 +31,7 @@
 		0511FAC91DFEAE7E0062593A /* HYLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0511FAC81DFEAE7E0062593A /* HYLLoginViewController.m */; };
 		0511FACC1DFEAF370062593A /* MineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0511FACB1DFEAF370062593A /* MineModel.m */; };
 		0511FACF1DFFEC2C0062593A /* UIButton_Num.m in Sources */ = {isa = PBXBuildFile; fileRef = 0511FACE1DFFEC2C0062593A /* UIButton_Num.m */; };
+		0531C9E21E0934A700F098B5 /* UIButton_Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 0531C9E11E0934A700F098B5 /* UIButton_Line.m */; };
 		05A0DA961DFA9FA600B091AF /* HYLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A0DA951DFA9FA600B091AF /* HYLMineViewController.m */; };
 		05D45F531DEBCD4A00979E23 /* HYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F501DEBCD4A00979E23 /* HYLTabBar.m */; };
 		05D45F541DEBCD4A00979E23 /* HYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F521DEBCD4A00979E23 /* HYLTabBarController.m */; };
@@ -123,6 +124,8 @@
 		0511FACB1DFEAF370062593A /* MineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineModel.m; sourceTree = "<group>"; };
 		0511FACD1DFFEC2C0062593A /* UIButton_Num.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButton_Num.h; sourceTree = "<group>"; };
 		0511FACE1DFFEC2C0062593A /* UIButton_Num.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButton_Num.m; sourceTree = "<group>"; };
+		0531C9E01E0934A700F098B5 /* UIButton_Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButton_Line.h; sourceTree = "<group>"; };
+		0531C9E11E0934A700F098B5 /* UIButton_Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButton_Line.m; sourceTree = "<group>"; };
 		05A0DA941DFA9FA600B091AF /* HYLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLMineViewController.h; sourceTree = "<group>"; };
 		05A0DA951DFA9FA600B091AF /* HYLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLMineViewController.m; sourceTree = "<group>"; };
 		05D45F4F1DEBCD4A00979E23 /* HYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLTabBar.h; sourceTree = "<group>"; };
@@ -368,6 +371,8 @@
 				0511FAC51DFE8AA90062593A /* UIButton_Reset.m */,
 				0511FACD1DFFEC2C0062593A /* UIButton_Num.h */,
 				0511FACE1DFFEC2C0062593A /* UIButton_Num.m */,
+				0531C9E01E0934A700F098B5 /* UIButton_Line.h */,
+				0531C9E11E0934A700F098B5 /* UIButton_Line.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -882,6 +887,7 @@
 				05D45F6A1DEBDB9900979E23 /* HYL_TabBar.m in Sources */,
 				05D45F621DEBCE6C00979E23 /* HNavigationController.m in Sources */,
 				05D45F941DEE761D00979E23 /* HYLCollectionView.m in Sources */,
+				0531C9E21E0934A700F098B5 /* UIButton_Line.m in Sources */,
 				0511FAC91DFEAE7E0062593A /* HYLLoginViewController.m in Sources */,
 				050D8C1F1DF6964A00F9D1BA /* HYLTypeShowViewController.m in Sources */,
 				0511FACF1DFFEC2C0062593A /* UIButton_Num.m in Sources */,
