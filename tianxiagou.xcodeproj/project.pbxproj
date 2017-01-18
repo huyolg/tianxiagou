@@ -33,6 +33,13 @@
 		0511FACF1DFFEC2C0062593A /* UIButton_Num.m in Sources */ = {isa = PBXBuildFile; fileRef = 0511FACE1DFFEC2C0062593A /* UIButton_Num.m */; };
 		0531C9E21E0934A700F098B5 /* UIButton_Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 0531C9E11E0934A700F098B5 /* UIButton_Line.m */; };
 		05A0DA961DFA9FA600B091AF /* HYLMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A0DA951DFA9FA600B091AF /* HYLMineViewController.m */; };
+		05D198C01E10B56E006611A7 /* HYLCircleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D198BF1E10B56E006611A7 /* HYLCircleScrollView.m */; };
+		05D198C31E110CF7006611A7 /* HYLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D198C21E110CF7006611A7 /* HYLCollectionViewCell.m */; };
+		05D198CD1E110EAC006611A7 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D198C61E110EAC006611A7 /* TAAbstractDotView.m */; };
+		05D198CE1E110EAC006611A7 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D198C81E110EAC006611A7 /* TAAnimatedDotView.m */; };
+		05D198CF1E110EAC006611A7 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D198CA1E110EAC006611A7 /* TADotView.m */; };
+		05D198D01E110EAC006611A7 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D198CC1E110EAC006611A7 /* TAPageControl.m */; };
+		05D198D41E111489006611A7 /* UIView+HYLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D198D31E111489006611A7 /* UIView+HYLExtension.m */; };
 		05D45F531DEBCD4A00979E23 /* HYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F501DEBCD4A00979E23 /* HYLTabBar.m */; };
 		05D45F541DEBCD4A00979E23 /* HYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F521DEBCD4A00979E23 /* HYLTabBarController.m */; };
 		05D45F5C1DEBCE1200979E23 /* UIBarButtonItem+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D45F571DEBCE1200979E23 /* UIBarButtonItem+Extend.m */; };
@@ -128,6 +135,20 @@
 		0531C9E11E0934A700F098B5 /* UIButton_Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButton_Line.m; sourceTree = "<group>"; };
 		05A0DA941DFA9FA600B091AF /* HYLMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLMineViewController.h; sourceTree = "<group>"; };
 		05A0DA951DFA9FA600B091AF /* HYLMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLMineViewController.m; sourceTree = "<group>"; };
+		05D198BE1E10B56E006611A7 /* HYLCircleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLCircleScrollView.h; sourceTree = "<group>"; };
+		05D198BF1E10B56E006611A7 /* HYLCircleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLCircleScrollView.m; sourceTree = "<group>"; };
+		05D198C11E110CF7006611A7 /* HYLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLCollectionViewCell.h; sourceTree = "<group>"; };
+		05D198C21E110CF7006611A7 /* HYLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLCollectionViewCell.m; sourceTree = "<group>"; };
+		05D198C51E110EAC006611A7 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		05D198C61E110EAC006611A7 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		05D198C71E110EAC006611A7 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		05D198C81E110EAC006611A7 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		05D198C91E110EAC006611A7 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		05D198CA1E110EAC006611A7 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		05D198CB1E110EAC006611A7 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		05D198CC1E110EAC006611A7 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		05D198D21E111489006611A7 /* UIView+HYLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HYLExtension.h"; sourceTree = "<group>"; };
+		05D198D31E111489006611A7 /* UIView+HYLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HYLExtension.m"; sourceTree = "<group>"; };
 		05D45F4F1DEBCD4A00979E23 /* HYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLTabBar.h; sourceTree = "<group>"; };
 		05D45F501DEBCD4A00979E23 /* HYLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYLTabBar.m; sourceTree = "<group>"; };
 		05D45F511DEBCD4A00979E23 /* HYLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYLTabBarController.h; sourceTree = "<group>"; };
@@ -336,6 +357,35 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		05D198BD1E10B52F006611A7 /* scrollView */ = {
+			isa = PBXGroup;
+			children = (
+				05D198C41E110EAC006611A7 /* PageControl */,
+				05D198BE1E10B56E006611A7 /* HYLCircleScrollView.h */,
+				05D198BF1E10B56E006611A7 /* HYLCircleScrollView.m */,
+				05D198C11E110CF7006611A7 /* HYLCollectionViewCell.h */,
+				05D198C21E110CF7006611A7 /* HYLCollectionViewCell.m */,
+				05D198D21E111489006611A7 /* UIView+HYLExtension.h */,
+				05D198D31E111489006611A7 /* UIView+HYLExtension.m */,
+			);
+			path = scrollView;
+			sourceTree = "<group>";
+		};
+		05D198C41E110EAC006611A7 /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				05D198C51E110EAC006611A7 /* TAAbstractDotView.h */,
+				05D198C61E110EAC006611A7 /* TAAbstractDotView.m */,
+				05D198C71E110EAC006611A7 /* TAAnimatedDotView.h */,
+				05D198C81E110EAC006611A7 /* TAAnimatedDotView.m */,
+				05D198C91E110EAC006611A7 /* TADotView.h */,
+				05D198CA1E110EAC006611A7 /* TADotView.m */,
+				05D198CB1E110EAC006611A7 /* TAPageControl.h */,
+				05D198CC1E110EAC006611A7 /* TAPageControl.m */,
+			);
+			path = PageControl;
+			sourceTree = "<group>";
+		};
 		05D45F4D1DEBCD4A00979E23 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +505,7 @@
 		05D45F7C1DEC364C00979E23 /* 轮播 */ = {
 			isa = PBXGroup;
 			children = (
+				05D198BD1E10B52F006611A7 /* scrollView */,
 				05D45F7D1DEC364C00979E23 /* CollectionViewCell.h */,
 				05D45F7E1DEC364C00979E23 /* CollectionViewCell.m */,
 				05D45F7F1DEC364C00979E23 /* images */,
@@ -860,11 +911,13 @@
 			files = (
 				050D8C2A1DF6AD6600F9D1BA /* HYLTypeCollectionViewCell.m in Sources */,
 				05D45F981DEE7D8200979E23 /* HYLHomeList.m in Sources */,
+				05D198CD1E110EAC006611A7 /* TAAbstractDotView.m in Sources */,
 				05D45F5C1DEBCE1200979E23 /* UIBarButtonItem+Extend.m in Sources */,
 				05D45F771DEC03EC00979E23 /* HYLHomeViewController.m in Sources */,
 				05D45FB71DF0073F00979E23 /* HYLSliderViewController.m in Sources */,
 				05EF3B8E1DCAE10700A5EC57 /* ViewController.m in Sources */,
 				05D45F7B1DEC080300979E23 /* HYLNavigationBar.m in Sources */,
+				05D198CE1E110EAC006611A7 /* TAAnimatedDotView.m in Sources */,
 				0511FAC31DFE6B620062593A /* MineTableViewCell.m in Sources */,
 				05D45F6B1DEBDB9900979E23 /* HYL_TabBarButton.m in Sources */,
 				050D8C4E1DF8F63F00F9D1BA /* HYLShoppingListCell.m in Sources */,
@@ -872,11 +925,15 @@
 				05D45FA41DEEB33800979E23 /* HYLTypeViewController.m in Sources */,
 				05D45F541DEBCD4A00979E23 /* HYLTabBarController.m in Sources */,
 				0511FAC01DFE39080062593A /* UIImage+Clip.m in Sources */,
+				05D198D41E111489006611A7 /* UIView+HYLExtension.m in Sources */,
+				05D198C31E110CF7006611A7 /* HYLCollectionViewCell.m in Sources */,
+				05D198D01E110EAC006611A7 /* TAPageControl.m in Sources */,
 				05D45F871DEC364C00979E23 /* CollectionViewCell.m in Sources */,
 				050D8C511DF9045200F9D1BA /* ShoppingListModel.m in Sources */,
 				0511FACC1DFEAF370062593A /* MineModel.m in Sources */,
 				05D45F6C1DEBDB9900979E23 /* HYL_TabBarViewController.m in Sources */,
 				05EF3B8B1DCAE10700A5EC57 /* AppDelegate.m in Sources */,
+				05D198CF1E110EAC006611A7 /* TADotView.m in Sources */,
 				05A0DA961DFA9FA600B091AF /* HYLMineViewController.m in Sources */,
 				050D8C2B1DF6AD6600F9D1BA /* typeModel.m in Sources */,
 				05D45FB41DF003AF00979E23 /* HYLChildViewController.m in Sources */,
@@ -890,6 +947,7 @@
 				0531C9E21E0934A700F098B5 /* UIButton_Line.m in Sources */,
 				0511FAC91DFEAE7E0062593A /* HYLLoginViewController.m in Sources */,
 				050D8C1F1DF6964A00F9D1BA /* HYLTypeShowViewController.m in Sources */,
+				05D198C01E10B56E006611A7 /* HYLCircleScrollView.m in Sources */,
 				0511FACF1DFFEC2C0062593A /* UIButton_Num.m in Sources */,
 				0511FAC61DFE8AA90062593A /* UIButton_Reset.m in Sources */,
 				05D45F8D1DEC364C00979E23 /* ScaleFlowLayout.m in Sources */,

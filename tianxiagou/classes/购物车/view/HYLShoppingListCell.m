@@ -8,6 +8,7 @@
 
 #import "HYLShoppingListCell.h"
 #import "Masonry.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface HYLShoppingListCell ()
 {
@@ -86,10 +87,10 @@
     _isSelected = NO;
     
     CGSize size = CGSizeMake(self.frame.size.height-10, self.frame.size.height-10);
-    model.imageName = @"img1.jpg";
-    UIImage *image = [UIImage imageNamed:model.imageName];
+    model.imageName = @"http://c.hiphotos.baidu.com/zhidao/pic/item/5ab5c9ea15ce36d3c704f35538f33a87e950b156.jpg";//@"img1.jpg";
+    UIImage *image = [UIImage imageNamed:@"img1.jpg"];
     image = [self clipImage:image toSize:size];
-    self.imgView.image = image;
+    [self.imgView sd_setImageWithURL:[NSURL URLWithString:model.imageName] placeholderImage:[UIImage imageNamed:@"img1.jpg"]];
     
 }
 

@@ -18,15 +18,15 @@
 
 @implementation HYLCollectionView
 
-- (NSMutableArray *)images
+- (NSArray *)images
 {
     if (!_images) {
-        _images = [NSMutableArray array];
+        _images = [NSArray array];
     }
     return _images;
 }
 
-- (instancetype)initWithImages:(NSMutableArray*)images
+- (instancetype)initWithImages:(NSArray*)images
 {
     self = [super initWithFrame:CGRectZero collectionViewLayout:[[ScaleFlowLayout alloc]init]];
     if (self) {
@@ -52,7 +52,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    NSLog(@"self.images.count %ld",self.images.count);
+//    NSLog(@"self.images.count %ld",self.images.count);
     return self.images.count*100;
 }
 

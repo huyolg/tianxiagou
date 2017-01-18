@@ -10,8 +10,8 @@
 
 @interface HYLCollectionView : UICollectionView
 
-- (instancetype)initWithImages:(NSMutableArray*)images;
+- (instancetype)initWithImages:(NSArray*)images;
 
-@property (nonatomic,strong) NSMutableArray *images;
+@property (nonatomic,strong) NSArray *images;
 
 @end
